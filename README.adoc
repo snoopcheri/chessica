@@ -1,0 +1,8 @@
+The goal of Chessica is to provide a tool to play a chess game between two players.
+Chessica drives the game and asks for the move from the respective player.
+
+A player can come in various flavors:
+* ConsoleInputPlayer - a player enters their next move in the console
+* RandomMovePlayer - a player which does a random move
+* WebUIPlayer - a player which can enter their moves via a Web frontend
+* UCIEnginePlayer - a player which wraps a chess engine conforming to the UCI protocol
