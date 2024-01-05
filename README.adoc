@@ -1,8 +1,22 @@
+== Abstract
+
 The goal of Chessica is to provide a tool to play a chess game between two players.
 Chessica drives the game and asks for the move from the respective player.
 
 A player can come in various flavors:
-* ConsoleInputPlayer - a player enters their next move in the console
-* RandomMovePlayer - a player which does a random move
-* WebUIPlayer - a player which can enter their moves via a Web frontend
-* UCIEnginePlayer - a player which wraps a chess engine conforming to the UCI protocol
+
+* `ConsoleInputPlayer` - a player enters their next move in the console
+* `RandomMovePlayer` - a player which does a random move
+* `WebUIPlayer` - a player which can enter their moves via a Web frontend
+* `UCIEnginePlayer` - a player which wraps a chess engine conforming to the UCI protocol
+
+Chessica should internally provide means to
+
+* represent a chess board, a move etc.
+* generate legal chess moves
+* create/parse FEN strings
+* create/parse chess moves in short notation
+
+Those features should be implemented with a straight-forward board representation like 0x88, as our main goal here is to have simple and easy to debug implementation.
+Performance is not important here.
+
