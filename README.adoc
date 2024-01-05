@@ -7,6 +7,7 @@ A player can come in various flavors:
 
 * `ConsoleInputPlayer` - a player enters their next move in the console
 * `RandomMovePlayer` - a player which does a random move
+* `BLEChessnutBoardPlayer` - a player which receives their next move from a Chessnut board (e.g. Chessnut Air Plus)
 * `WebUIPlayer` - a player which can enter their moves via a Web frontend
 * `UCIEnginePlayer` - a player which wraps a chess engine conforming to the UCI protocol
 
